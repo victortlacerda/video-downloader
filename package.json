@@ -1,0 +1,7 @@
+{
+  "name":"video-downloader-yt-dlp","version":"1.0.0","description":"Video Downloader para Windows",
+  "main":"src/main.js","scripts":{"start":"electron .","dist":"electron-builder --win portable"},
+  "devDependencies":{"electron":"^35.0.0","electron-builder":"^26.0.12"},
+  "build":{"appId":"br.local.videodownloader","productName":"Video Downloader","asar":true,
+    "files":["src/**/*","package.json"],"win":{"target":[{"target":"portable","arch":["x64"]}]}}
+}
